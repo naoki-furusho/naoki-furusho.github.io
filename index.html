@@ -270,15 +270,15 @@
     <section id="Contact" class="container">
       <h2 class="section-title text-center">Contact</h2>
       
-      <form class="form-horizontal form-custom">
+      <form class="form-horizontal form-custom" action="./postmail.cgi" method="post">
         <div class="form-group">
-          <label for="inputName" class="col-sm-4 control-label">お名前</label>
+          <label for="inputName" class="col-sm-4 control-label"><span class="must">必須</span>お名前</label>
           <div class="col-sm-4">
             <input type="text" class="form-control" id="inputName" placeholder="Name" required>
           </div>
         </div>
         <div class="form-group">
-          <label for="inputEmail" class="col-sm-4 control-label">メールアドレス</label>
+          <label for="inputEmail" class="col-sm-4 control-label"><span class="must">必須</span>メールアドレス</label>
           <div class="col-sm-4">
             <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
           </div>
@@ -292,7 +292,7 @@
         <div class="form-group">
           <label for="inputMessage" class="col-sm-4 control-label">メッセージ</label>
           <div class="col-sm-6">
-            <textarea class="form-control" name="メッセージ" rows="4" id="inputMessage" placeholder="メッセージを入力してください" required></textarea>
+            <textarea class="form-control" name="メッセージ" rows="4" id="inputMessage" placeholder="メッセージを入力してください"></textarea>
           </div>
         </div>
         <div class="form-group">
@@ -301,8 +301,6 @@
           </div>
         </div>
       </form>
-      
-      
     </section>
     </div>
 
