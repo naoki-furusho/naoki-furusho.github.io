@@ -1,0 +1,319 @@
+
+/* 全体 */
+/* セクションタイトル */
+.section-title {
+    font-size: 36px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 40px 0px;
+
+}
+
+@media (min-width: 769px){
+.section-title {
+    padding: 60px 0px;
+}
+}
+
+
+/* ナビ */
+#tf-menu {
+    margin-bottom: 0;
+    background: transparent;
+    border: 0;
+    color: #fff ;
+    padding: 2% 0;
+    transition: all 0.5s;
+    border-radius: 0px;
+    background-image: url(./images/bamboo4-2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 399px) {
+#tf-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background: #222222;
+    padding: 1% 0;
+}
+}
+
+
+#tf-menu.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background: #222222;
+    padding: 1% 0;
+}
+
+#tf-menu a {
+    color: inherit;
+}
+
+#tf-menu a:hover {
+  opacity: 0.6;
+}
+
+
+/* ファーストビュー */
+.intro {
+    padding: 300px 0px;
+    background-image: url(./images/bamboo4.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* ▼表示領域が400px以上の場合 */
+@media screen and (min-width: 400px) {
+.intro {
+    padding: 300px 0px;
+    background-image: url(./images/bamboo4.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+}
+/* ▼表示領域が400px未満の場合 */
+@media screen and (max-width: 399px) {
+.intro {
+    padding: 170px 0px;
+    background-image: url(./images/bamboo4.JPG);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+}
+
+.intro h1 {
+    font-weight: 900;
+    font-size: 55px;
+    color: #fff;
+}
+
+
+
+
+/* About セクション*/
+#About {
+    background-color: #F2F2F2;
+    padding: 20px 0px;
+}
+
+/* furusho画像 */
+.my-img{
+    padding: 25%;
+}
+
+.about-text {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.about-text li {
+    margin: 40px 0px;
+}
+
+.about-title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+
+/* スキル セクション */
+.skill-back {
+    border-radius: 100%;  
+    background-color: #00A4BB;
+    color: #fff;
+}
+
+#Skills h4 {
+    margin: 35px 0px;
+    font-weight: 900;
+    font-family: "メイリオ", Meiryo,sans-serif;
+}
+
+
+/* ヒストリー */
+
+/* 背景縦線 */
+.timeline:before {
+    top: 0;
+    bottom: 190px;
+    position: absolute;
+    content: "";
+    width: 2px;
+    background-color: #f1f1f1;
+    left: 40px;
+    margin-left: -1.5px;
+}
+
+@media (min-width: 769px){
+.timeline:before {
+    bottom: 0;
+    left: 50%;
+}
+}
+
+
+/* historyスタイル */
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.timeline>li .timeline-image {
+    left: 0;
+    margin-left: 0;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 100;
+    background-color: #00A4BB;
+    color: #fff;
+    border-radius: 100%;
+    border: 7px solid #f1f1f1;
+    text-align: center;
+}
+
+.timeline>li {
+    position: relative;
+    min-height: 260px;
+    margin-bottom: 50px;
+}
+
+
+@media (min-width: 769px){
+.timeline>li {
+    min-height: 170px;
+    margin-bottom: 100px;
+}
+}
+
+
+@media (min-width: 769px){
+.timeline>li .timeline-image {
+    width: 170px;
+    height: 170px;
+    left: 50%;
+    margin-left: -85px;
+}
+}
+
+
+.timeline>li .timeline-image h4 {
+    font-size: 14px;
+    margin: 26px 0px;
+    line-height: 14px;
+}
+
+@media (min-width: 769px){
+.timeline>li .timeline-image h4 {
+    font-size: 20px;
+    margin: 71px 0px;
+    line-height: 14px;
+}
+}
+
+
+
+.timeline>li .timeline-panel {
+    position: relative;
+    width: 100%;
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+@media (min-width: 769px){
+.timeline>li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+}
+}
+
+
+
+@media (min-width: 769px){
+.timeline>li.timeline-inverted>.timeline-panel {
+    width: 41%;
+    float: right;
+    padding: 0 20px 20px 30px;
+    text-align: left;
+}
+}
+
+
+/* コンタクトフォーム */
+#Contact h2 {
+    
+}
+
+/* コンタクトフォーム 下幅調整 */
+.form-custom {
+    padding: 0px 0px 80px;
+    
+}
+
+
+/* スマホ 横幅調整 */
+@media (max-width: 768px){
+.form-custom {
+    padding: 0px 15px 50px;
+    
+}
+}
+
+
+/* フッター */
+footer {
+    padding: 20px 0px;
+    background-color: #222222;
+    color: #fff !important;
+}
+
+.footer-nav  {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0px;
+}
+
+.footer-nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+.footer-sns {
+    margin-top: 10px;
+}
+
+.footer-sns li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.copyright {
+    text-align: right;
+    margin: 15px 0px;
+}
+
+footer a {
+    color: inherit;
+}
